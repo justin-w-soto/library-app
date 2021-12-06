@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useParams } from 'react'
 import Book from '../../components/book/Book'
 import { getBooks } from '../../services/books'
 
