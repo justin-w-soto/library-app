@@ -11,11 +11,11 @@ function App() {
       <main className="container">
         <header>
           <h1>Library Catalog</h1>
-          <NavLink to="/" exact>
+          <NavLink className="linkstyle" to="/" exact>
             {' '}
             Home{' '}
           </NavLink>
-          <NavLink to="/books" exact>
+          <NavLink className="linkstyle" to="/books" exact>
             {' '}
             Book List{' '}
           </NavLink>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import { getBookById } from '../../services/books'
 import Book from '../../components/book/Book'
 
@@ -12,7 +12,14 @@ function BookDetail() {
   }, [id])
   if (!book) return <h3>Loading book details...</h3>
 
-  return <Book book={book} showDetail />
+  return (
+    <>
+      <Book book={book} showDetail />
+      <Link className="linkstyle" to="/books">
+        Return to List
+      </Link>
+    </>
+  )
 }
 
 export default BookDetail
