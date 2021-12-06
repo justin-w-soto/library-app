@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom'
 import BookList from './views/Books/BookList'
 import BookDetail from './views/Books/BookDetail'
 import './App.css'
@@ -8,10 +8,14 @@ function App() {
   return (
     <Router>
       <main className="container">
-        <h1>Library Catalog</h1>
+        <header>
+          <h1>Library Catalog</h1>
+          <NavLink to="/"> Home </NavLink>
+          <NavLink to="/books"> Book List </NavLink>
+        </header>
         <Switch>
-          <Route path="/books" component={BookList} />
-          <Route path="/books/:id" component={BookDetail} />
+          <Route path="/books" exact component={BookList} />
+          <Route path="/books/:id" exact component={BookDetail} />
         </Switch>
       </main>
     </Router>
