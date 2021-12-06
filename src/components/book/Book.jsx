@@ -4,12 +4,12 @@ import './Book.css'
 
 function Book({
   book: { title, total_pages: totalPages, rating, isbn, published_date: publishedDate, authors },
-  showDetail = false,
+  showDetail = true,
 }) {
   return (
     <article className="book">
-      {showDetail && <Link to="/books">Return to List</Link>}
       <h3>{title}</h3>
+      <Link to="/books">Return to List</Link>
       <address>
         {authors.map((author) => (
           <Author key={author.author_id} author={author} />
