@@ -1,0 +1,13 @@
+.linkstyle {
+    text-decoration: none;
+    color: rgb(103, 63, 236);
+    font-size: 1.5rem;
+}
+
+.linkstyle:hover {
+    color:rgb(236, 63, 170);
+    text-decoration: underline;
+}
+
+
+
