@@ -5,6 +5,9 @@
 }
 
 .linkstyle:hover {
-    color:rgb(236, 63, 170)
+    color:rgb(236, 63, 170);
+    text-decoration: underline;
 }
+
+
 
