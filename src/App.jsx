@@ -13,7 +13,7 @@ function App() {
           <h1>Library Catalog</h1>
           <NavLink className="linkstyle" to="/" exact>
             {' '}
-            Home{' '}
+            Home //{' '}
           </NavLink>
           <NavLink className="linkstyle" to="/books" exact>
             {' '}
